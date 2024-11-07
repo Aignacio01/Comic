@@ -1,0 +1,217 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    /* font-family: ; */
+    font-size: 2rem;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 140rem;
+    max-width: 95%;
+    margin: 0 auto;
+}
+h1, h2, h3, h4 {
+    /* font-family: ; */
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.text-center {
+    text-align-last: center;
+}
+
+.header {
+    height: 10rem;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    gap: 3rem;
+}
+.nav__list li {
+    width: 100%;
+    width: 100%;
+    margin: 1rem 0;
+}
+.nav__link {
+    color: orange;
+}
+.cerrar-menu {
+    display: none;
+    color: #fff;
+}
+.abrir-menu {
+    padding-top: 1.4rem;
+}
+@media (min-width: 769px ) {
+    .abrir-menu {
+        display: none;
+    }
+}
+@media (max-width: 768px ) {
+    .abrir-menu {
+
+    }
+    .nav-container {
+        justify-content: space-around;
+    }
+    .nav-bar {
+        display: none;
+    }
+    .nav-bar.visible {
+        position: absolute;
+        width: 100vw;
+        top: 6rem;
+        display: block;
+        
+    }
+    .nav__list {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        background-color: #2a2a2a;
+        opacity: 6;
+
+    }
+    .nav__list li {
+        padding: 1rem 0;
+        border: 1px solid orange;
+
+    }
+    .cerrar-menu {
+        text-align: right;
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+
+    }
+
+}
+.main {
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.hero__img {
+}
+.hero__image {
+}
+
+.btn-compra {
+    background-color: red;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin-top: 2.4rem;
+}
+
+.comic__page {
+    /* width: 21rem; */
+    margin-bottom: 3rem;
+}
+.comic__image {
+    margin: 0 auto;
+}
+.footer {
+    height: 6rem;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Media Queries for Comic Layout */
+@media (min-width: 768px) {
+    .comic__section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 4 columnas */
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .hero__image {
+        width: 60%;
+    }
+}
+@media (min-width: 1024px) {
+    .comic__section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 4 columnas */
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .hero__image {
+        width: 40%;
+    }
+}
+@media (min-width: 1440px) {
+    .comic__section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .hero__image {
+        width: 40%;
+    }
+}
+@media (max-width: 767px) {
+    .hero {
+        display: block;
+    }
+    .hero__image {
+        width: 40%;
+    }
+}
+
+.comic__page {
+    text-align: center;
+}
+.hero__section {
+    text-align: center;
+}
+.hero__img {
+    text-align: center;
+}
